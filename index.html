@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ola - Inicio</title>
+    <link rel="shortcut icon" href="./icono/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        /*  Font personalizado  para Titulos  */
+        @font-face {  font-family: Flipahaus-V2;  src: url(./font/Flipahaus-Bold.otf);  }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <input type="search" class="search-input" placeholder="Buscar...">
+            <div class="top-icons">
+                <a href="carrito.html"><img src="./icono/carrito.jpg" alt="Carrito"></a>
+                <a href="login.html"><img src="./icono/usuario.jpg" alt="Mi cuenta"></a>
+            </div>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li class="menu-item"><a href="#">Inicio</a></li>
+                <li class="menu-item">
+                    <a href="#">Catálogo</a>
+                    <ul class="submenu">
+                        <li><a href="cat-01.html">Complementos</a></li>					 
+                        <li><a href="cat-02.html">Ropa</a></li>
+                        <li><a href="cat-03.html">Gorras y lentes</a></li>
+                        <li><a href="cat-04.html">Bolsas y Mochilas</a></li>
+                        <li><a href="cat-05.html">Protección</a></li>   
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="contacto.html">Contacto</a></li>
+                <li class="menu-item"><a href="quienes-somos.html">Quiénes somos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-image">
+            <img src="img/imagen_principal.jpg" alt="Imagen Principal">
+            <img src="img/imagen_segunda.jpg" alt="Imagen Secundaria">
+            <h1>Todo un oceano de felicidad</h1>
+            <img src="img/imagen_tercera.jpg" alt="Imagen Secundaria">
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h3>Síguenos en</h3>
+                <div class="social-icons">
+                    <img src="icono/facebook.jpg" alt="Facebook">
+                    <img src="icono/Tik-Tok-Logo-Small.jpg" alt="TikTok">
+                    <img src="icono/instagram.jpg" alt="Instagram">
+                    <img src="icono/X.png" alt="X">
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Aceptamos</h3>
+                <div class="payment-icons">
+                    <img src="icono/paypal.jpg" alt="PayPal">
+                    <img src="icono/visa-card.jpg" alt="Visa">
+                    <img src="icono/oxxo.jpg" alt="Oxxo">
+                    <img src="icono/master-card.jpg" alt="MasterCard">
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Legal</h3>
+                <a href="legal.html">Condiciones de uso y venta</a>
+            </div>
+            <div class="footer-column">
+                <h3>Privacidad</h3>
+                <a href="privacidad.html">Aviso de privacidad</a>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">© 2025, Ola - Productos para natación. Todos los derechos reservados. By Martin Escobedo M. | martin.escobedo24A@udgvirtual.udg.mx</p>
+    </footer>
+
+    <!-- Script para animación -->
+    <script>
+        const elements = document.querySelectorAll('.main-image img, .main-image h1');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                entry.target.classList.toggle('visible', entry.isIntersecting);
+            });
+        }, {
+            threshold: 0.2,
+            rootMargin: '-50px'
+        });
+    
+        elements.forEach(element => observer.observe(element));
+    </script>
+
+</body>
+</html>

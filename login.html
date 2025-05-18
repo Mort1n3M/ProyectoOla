@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./icono/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./css/login.css">
+        <title>Ola - Login</title>
+        <style>
+            @font-face {    font-family: Flipahaus-V2;   src: url(./font/Flipahaus-Bold.otf);    }
+            body {
+                background-image: url(./img/splash.jpg);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }		
+        </style>
+    </head>
+    
+    <body>
+        <header>
+            <img src="./img/ola.jpg" alt="Ola Logo" style="height: 50px; margin-right: 15px;">
+            <div class="top-icons">
+                <a href="index.html"><img src="./icono/home.jpg" alt="Inicio"></a>
+            </div>
+        </header>
+
+        <main>
+            <div class="tuTiendadeProductos">
+                <h1 >Tu tienda de productos de natación</h1>
+            </div>
+            <div class="container" >
+                <h2 id="registroContacto">Login</h2>
+                <form class="saltoLinea" action="" method="POST">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input class="saltoLinea" type="password" name="contraseña" placeholder="Contraseña" required>               
+                    <button type="submit">Ingresar</button>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>

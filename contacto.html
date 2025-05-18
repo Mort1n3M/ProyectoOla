@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ola - Contacto</title>
+        <link rel="shortcut icon" href="./icono/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./css/contacto.css">
+        <style>
+            /*  Font personalizado  para Titulos  */
+            @font-face {  font-family: Flipahaus-V2;  src: url(./font/Flipahaus-Bold.otf);  }
+            body {
+                background-image: url('./img/splash.jpg');
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                margin: 0;
+                padding: 0;
+            }
+        </style>    
+    </head>
+    <body>
+        <header>
+            <div class="logo-title-container">
+                <img src="./img/ola.jpg" alt="Ola Logo" style="height: 50px; margin-right: 15px;">
+                <h1>Queremos saber de ti ...</h1>
+            </div>
+            <div class="top-icons">
+                <a href="javascript: history.go(-1)"><img src="./icono/home.jpg" alt="Carrito"></a>
+            </div>
+        </header>
+            
+        <main>
+            <div class="container">
+                <h2 id="registroContacto">Dejanos tus datos</h2>
+                <form action="" method="POST">
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="text" name="apellido" placeholder="Apellido" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="contraseña" placeholder="Contraseña" required>
+                    <textarea name="comentarios" placeholder="Deja tus comentarios" rows="4"></textarea>
+                    <br>
+                    <button type="submit">Registrar</button>
+                </form>
+            </div>
+        </main>       
+    </body>
+</html>
